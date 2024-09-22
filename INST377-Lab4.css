@@ -1,0 +1,53 @@
+body {
+    background-color: lightslategrey;
+}
+
+.alert{
+    background-color: lightcoral;
+    padding: 10;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+.changecolor{
+    background-color: lightcoral;
+    padding: 10;
+    margin: 10px;
+    margin-right: 45%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    float: right; 
+    
+}
+
+.textTester{
+    background-color: lightcoral;
+    padding: 10;
+    margin-top: 5%;
+    margin-left: -26.8%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    float: left;
+    
+}
+
+.textSection{
+    background-color: lightcoral;
+    padding: 10;
+    margin: 10px;
+    margin-right: 45%;
+    margin-top: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    float: right;
+}

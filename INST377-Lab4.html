@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>INST377 - Lab 4</title>
+        <link rel = "stylesheet" href="INST377-Lab4.css">
+
+        <script type="text/javascript">
+            function showAlert() {
+                let name = document.getElementById('nameInput').value;
+                if (name) {
+                    alert(`Hello ${name}!`);
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            function changeColor() {
+                if(document.body.style.backgroundColor == 'lightslategrey') {
+                    const t = document.body.style.backgroundColor= 'blue';
+                } else {
+                const t = document.body.style.backgroundColor = 'lightslategrey';
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            function textTester() {
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                let firstName = document.getElementById('firstName').value; 
+                if (validation.test(firstName)) {
+                    alert('no speical chars');
+                    return false;
+                }
+                
+                return true;
+            }
+        </script>
+
+        <script type="text/javascript">
+            function addText(){
+                var paragraph = document.getElementById("h1");
+                var text = document.createTextNode(" Add Text");   
+
+                paragraph.appendChild(text);
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1 id="h1">INST377 - Lab 4</h1>
+
+            <!-- Alert me section-->
+            <div class="alert">
+                <form onsubmit="event.preventDefault(); showAlert();">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" name="nameInput" required>
+                    <button type="submit">Alert Me!</button>
+                </form>
+            </div>
+        
+        <!--Chnage color section-->
+        <div class = "changecolor">
+            <button onclick="changeColor()">Change Color</button>
+        </div>
+
+        <!--Text Tester Section-->
+        <div class="textTester">
+            <form name="textForm" onsubmit="event.preventDefault(); textTester();">
+                <label for="firstName">Text Tester:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <button type="submit">Validate Text</button>
+            </form>
+        </div>
+
+        <!--Text Section-->
+        <div class="textSection">
+            <button onclick="addText()">Add Text</button>
+        </div>
+
+    </body>
+</html>
